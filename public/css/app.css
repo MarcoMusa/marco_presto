@@ -10859,6 +10859,10 @@ textarea.form-control-lg {
     background-color: var(--blu);
 }
 
+.bg-yellow {
+    background-color: var(--chrome-yellow);
+}
+
 .text-chromeyellow {
     color: var(--chrome-yellow);
 }
