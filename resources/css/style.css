@@ -1,0 +1,38 @@
+:root {
+    --blu: #372772;
+    --blu-tr: #37277286;
+    --chrome-yellow: #faa613;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+.bg-blu {
+    background-color: var(--blu);
+}
+
+.text-chromeyellow {
+    color: var(--chrome-yellow);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 5px rba(0, 0, 0, 1);
+}
+
+.nav-link:hover {
+    background-color: var(--chrome-yellow);
+    color: white;
+    border-radius: 2rem;
+    transition: 3s;
+}
+
+.p-form {
+    background: linear-gradient(
+        340deg,
+        rgba(253, 253, 253, 1) 14%,
+        rgba(55, 39, 114, 1) 65%
+    );
+
+    border-radius: 0.8rem;
+}
