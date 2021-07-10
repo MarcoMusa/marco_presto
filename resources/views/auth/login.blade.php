@@ -3,15 +3,16 @@
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-12 col-md-6">
-            <form class="shadow px-5 py-5 p-form">
+            <form class="shadow px-5 py-5 p-form" method="POST" action="{{route('login')}}">
+                @csrf
                 <div><h1 class="text-shadow text-chromeyellow fs-4 text-center text-uppercase mb-3">Login <i class="fas fa-user"></i></h1></div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label text-shadow text-chromeyellow">Email</label>
-                  <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                  <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mariorossi@gmail.com" name="email">
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label text-shadow text-chromeyellow">Password</label>
-                  <input type="password" class="form-control rounded-pill" id="exampleInputPassword1">
+                  <input type="password" class="form-control rounded-pill" id="exampleInputPassword1" placeholder="123567868" name="password">
                 </div>
                 <div class="mb-3 form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">

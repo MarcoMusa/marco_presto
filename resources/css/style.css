@@ -40,3 +40,9 @@
 
     border-radius: 0.8rem;
 }
+
+.border-bottom-yellow {
+    border: none !important;
+    border-radius: 0px;
+    border-bottom: 4px solid rgb(250, 200, 70) !important;
+}
