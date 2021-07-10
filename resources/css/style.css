@@ -12,6 +12,10 @@
     background-color: var(--blu);
 }
 
+.text-blu {
+    color: var(--blu);
+}
+
 .bg-yellow {
     background-color: var(--chrome-yellow);
 }
