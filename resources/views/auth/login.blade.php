@@ -20,9 +20,12 @@
                 <div class="text-center">
                 <button type="submit" class="btn btn-lg mt-2 px-5 rounded-pill text-uppercase shadow py-3 text-white bg-yellow">Login</button>
                 </div>
+                <div class="mt-3 text-center">
+                    <i class="fab fa-google-plus text-danger fs-2"></i>
+                    <i class="fab fa-facebook text-primary fs-2"></i>
+                </div>
               </form>
         </div>
-    </div>
 </div>
 
 
