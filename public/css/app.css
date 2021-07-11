@@ -10852,6 +10852,14 @@ textarea.form-control-lg {
     --chrome-yellow-tr: #faa513c4;
 }
 
+.mg-top {
+    margin-top: 100px;
+}
+
+.p-radius {
+    border-radius: 0.8rem;
+}
+
 * {
     font-family: "Montserrat", sans-serif;
 }
@@ -10919,6 +10927,14 @@ textarea.form-control-lg {
     background-color: var(--blu);
     border: none;
     border-radius: 0.8rem;
+}
+
+.p-create {
+    background: linear-gradient(
+        340deg,
+        rgba(253, 253, 253, 1) 14%,
+        rgba(250, 166, 19, 1) 65%
+    );
 }
 
 

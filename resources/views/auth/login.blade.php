@@ -1,9 +1,9 @@
 <x-layout>
 
-<div class="container mt-5">
+<div class="container">
     <div class="row justify-content-center">
         <div class="col-12 col-md-6">
-            <form class="shadow px-5 py-5 p-form" method="POST" action="{{route('login')}}">
+            <form class="shadow px-5 py-5 p-form mg-top" method="POST" action="{{route('login')}}">
                 @csrf
                 <div><h1 class="text-shadow text-chromeyellow fs-4 text-center text-uppercase mb-3">Login <i class="fas fa-user"></i></h1></div>
                 <div class="mb-3">
