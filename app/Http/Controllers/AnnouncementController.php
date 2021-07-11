@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\AnnouncementRequest;
+use App\Models\Announcement;
 use Illuminate\Http\Request;
 
 class AnnouncementController extends Controller
@@ -19,5 +21,14 @@ class AnnouncementController extends Controller
     public function create()
     {
         return view('announcements.create');
+    }
+
+    public function store(AnnouncementRequest $request)
+
+    {
+
+        $a = new Announcement();
+
+        return view('homepage');
     }
 }

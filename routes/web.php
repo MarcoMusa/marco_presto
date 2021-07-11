@@ -19,3 +19,4 @@ Route::get('/', [PublicController::class, 'home'])->name('homepage');
 
 // ROTTE ANNUNCI
 Route::get('announcement/create', [AnnouncementController::class, 'create'])->name('announcement.create');
+Route::post('announcement/store', [AnnouncementController::class, 'store'])->name('announcement.store');
