@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg bg-blu shadow">
+<nav class="navbar navbar-expand-lg bg-nav fixed-top shadow">
     <div class="container-fluid">
       <a class="navbar-brand ms-5 text-chromeyellow fw-bolder text-shadow ms-5" href="#"><i class="fas fa-shopping-bag"></i> PRESTO.it</a>
-      <button class="btn shadow text-uppercase text-blu px-3 bg-yellow rounded-pill" href="#"><i class="fas fa-plus-square"></i> Inserisci Annuncio</button>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

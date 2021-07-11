@@ -1,7 +1,8 @@
 :root {
     --blu: #372772;
-    --blu-tr: #37277286;
+    --blu-tr: #372772de;
     --chrome-yellow: #faa613;
+    --chrome-yellow-tr: #faa513c4;
 }
 
 * {
@@ -16,8 +17,16 @@
     color: var(--blu);
 }
 
+.bg-nav {
+    background-color: var(--blu-tr);
+}
+
 .bg-yellow {
     background-color: var(--chrome-yellow);
+}
+
+.bg-yellow-tr {
+    background-color: var(--chrome-yellow-tr);
 }
 
 .text-chromeyellow {
@@ -49,4 +58,18 @@
     border: none !important;
     border-radius: 0px;
     border-bottom: 4px solid rgb(250, 200, 70) !important;
+}
+
+.header {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("https://images.unsplash.com/photo-1607083207118-f60f4fff8efe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.p-card {
+    background-color: var(--blu);
+    border: none;
+    border-radius: 0.8rem;
 }
