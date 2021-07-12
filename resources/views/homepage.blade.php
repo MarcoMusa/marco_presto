@@ -16,7 +16,7 @@
             <div class="col-12 col-md- text-center mb-5">
                 <h1 class="text-uppercase text-chromeyellow text-shadow display-4 fw-bold">presto.it <i class="fas fa-shopping-bag"></i></h1>
                 <p class="lead text-chromeyellow">Il tuo sito di annunci...!</p>
-               <a href="{{route('announcement.create')}}" class="btn bg-yellow">Inserisci</a>
+               <a href="{{route('announcement.create')}}" class="btn btn-lg shadow text-white rounded-pill text-uppercase px-4 bg-yellow"><i class="fas fa-plus-square"></i> Inserisci annuncio</a>
             </div>
         </div>
     </div>
