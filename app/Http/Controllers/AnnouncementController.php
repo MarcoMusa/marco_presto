@@ -13,9 +13,6 @@ class AnnouncementController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-
-        $categories = Category::all();
-        View::share('categories', $categories);
     }
 
     public function index()
@@ -36,6 +33,7 @@ class AnnouncementController extends Controller
 
         $a->title = $request->input('title');
         $a->body = $request->input('body');
+        $a->category_id = $request->input('category');
 
         $a->save();
 
