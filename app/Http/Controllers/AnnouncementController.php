@@ -2,15 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\AnnouncementRequest;
+use App\Models\Category;
 use App\Models\Announcement;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
+use App\Http\Requests\AnnouncementRequest;
 
 class AnnouncementController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth');
+
+        $categories = Category::all();
+        View::share('categories', $categories);
     }
 
     public function index()
