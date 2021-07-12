@@ -27,7 +27,7 @@
               Benvenuto, {{Auth::user()->name}}
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="{{route('logout')}}" onclick="event.preventDefault();document.getElementById('logout').submit();">Logout</a></li>
+              <li><a class="dropdown-item bg-yellow m-0" href="{{route('logout')}}" onclick="event.preventDefault();document.getElementById('logout').submit();">Logout</a></li>
               <form method="POST" action="{{route('logout')}}" id="logout">
                 @csrf
               </form>

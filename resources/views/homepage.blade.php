@@ -23,12 +23,43 @@
 </header>
 
 
+
+
+
 <div class="container mt-5 mb-5 ">
     <div class="row">
         <div class="col-12 text-center">
-            <h2 class="display-6 text-chromeyellow text-shadow fw-bold">I nostri <span class="display-4 text-blu text-shadow fw-bolder">annunci</span> </h2>
+            <h2 class="display-6 text-chromeyellow text-shadow fw-bold mb-5">I nostri <span class="display-4 text-blu text-shadow fw-bolder">annunci</span> </h2>
         </div>
-        <div class="col-12 col-md-6 mt-5">
+        @foreach ($announcements as $announcement)
+        <div class="row justify-content-center">
+            <div class="col-md-8 mb-5">
+                <div class="card">
+                    <div class="card-header">{{$announcement->title}}</div>
+                    <div class="card-body">
+                        <p>
+                            <img src="https://via.placeholder.com/350x150" class="rounded float-right" alt="">
+                            {{$announcement->body}}
+                        </p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <strong>Category: <a href="">{{$announcement->category->name}}</a></strong>
+                        <i>{{$announcement->created_at->format('d/m/y')}} - {{$announcement->id}}</i>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+
+
+
+
+
+
+
+
+
+        {{-- <div class="col-12 col-md-6 mt-5">
               <div class="card p-card shadow" style="width: 18rem;">
                 <img src="https://picsum.photos/50/50" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -37,7 +68,7 @@
                   <div class="text-center"><a href="#" class="btn btn-lg bg-yellow text-white rounded-pill text-uppercase">Dettaglio</a></div>
                 </div>
               </div>
-        </div>
+        </div> --}}
     </div>
 </div>
 
