@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Announcement extends Model
+class Category extends Model
 {
-    public function category()
+    public function announcements()
     {
-        return $this->belongsTo(Category::class);
+        return $this->hasMany(Announcement::class);
     }
 }

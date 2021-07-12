@@ -23,7 +23,7 @@
                         <input type="password" class="form-control rounded-pill" id="exampleInputPassword1" placeholder="123567868" name="password_confirmation">
                       </div>
                     <div class="text-center">
-                    <button type="submit" class="btn btn-lg mt-2 px-5 rounded-pill text-uppercase shadow py-3 text-white bg-yellow">Login</button>
+                    <button type="submit" class="btn btn-lg mt-2 px-5 rounded-pill text-uppercase shadow py-3 text-white bg-yellow">Registrati</button>
                     </div>
                     <div class="mt-3 text-center">
                         <i class="fab fa-google-plus text-danger fs-2"></i>
