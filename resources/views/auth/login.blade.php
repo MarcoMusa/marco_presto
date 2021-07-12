@@ -5,7 +5,7 @@
         <div class="col-12 col-md-6">
             <form class="shadow px-5 py-5 p-form mg-top" method="POST" action="{{route('login')}}">
                 @csrf
-                <div><h1 class="text-shadow text-chromeyellow fs-4 text-center text-uppercase mb-3">Login <i class="fas fa-user"></i></h1></div>
+                <div><h1 class="text-shadow text-chromeyellow fw-bold fs-4 text-center text-uppercase mb-3">Login <i class="fas fa-user"></i></h1></div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label text-shadow text-chromeyellow">Email</label>
                   <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mariorossi@gmail.com" name="email">

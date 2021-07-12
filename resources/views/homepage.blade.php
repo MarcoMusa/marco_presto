@@ -1,8 +1,18 @@
 <x-layout>
 
+
+
 <header class="header">
     <div class="container h-100">
         <div class="row h-100 align-items-end justify-content-center">
+            <div class="col-12">
+                {{-- ALERT ANNUNCIO CREATO CORRETTAMENTE --}}
+                @if (session('announcement.created.success'))
+                <div class="alert alert-success rounded-pill shadow text-chromeyellow fw-bold">
+                    Annuncio creato correttamente
+                </div>
+                @endif
+            </div>
             <div class="col-12 col-md- text-center mb-5">
                 <h1 class="text-uppercase text-chromeyellow text-shadow display-4 fw-bold">presto.it <i class="fas fa-shopping-bag"></i></h1>
                 <p class="lead text-chromeyellow">Il tuo sito di annunci...!</p>
@@ -24,7 +34,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <div class="text-center"><a href="#" class="btn btn-lg bg-yellow text-blu rounded-pill text-uppercase">Dettaglio</a></div>
+                  <div class="text-center"><a href="#" class="btn btn-lg bg-yellow text-white rounded-pill text-uppercase">Dettaglio</a></div>
                 </div>
               </div>
         </div>

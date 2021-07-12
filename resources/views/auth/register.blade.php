@@ -1,11 +1,11 @@
 <x-layout>
 
-    <div class="container mt-5">
+    <div class="container mg-top">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
                 <form class="shadow px-5 py-5 p-form" method="POST" action="{{route('register')}}">
                     @csrf
-                    <div><h1 class="text-shadow text-chromeyellow fs-4 text-center text-uppercase mb-3">Registrati <i class="fas fa-address-card"></i></h1></div>
+                    <div><h1 class="text-shadow text-chromeyellow fw-bold fs-4 text-center text-uppercase mb-3">Registrati <i class="fas fa-address-card"></i></h1></div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label text-shadow text-chromeyellow">Nome e Cognome</label>
                         <input type="text" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Mario Rossi" name="name">
@@ -22,10 +22,6 @@
                         <label for="password_confirmation" class="form-label text-shadow text-chromeyellow">Conferma Password</label>
                         <input type="password" class="form-control rounded-pill" id="exampleInputPassword1" placeholder="123567868" name="password_confirmation">
                       </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label fs-6 text-white" for="exampleCheck1">Ricordami</label>
-                    </div>
                     <div class="text-center">
                     <button type="submit" class="btn btn-lg mt-2 px-5 rounded-pill text-uppercase shadow py-3 text-white bg-yellow">Login</button>
                     </div>

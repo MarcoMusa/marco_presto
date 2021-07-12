@@ -29,6 +29,12 @@ class AnnouncementController extends Controller
 
         $a = new Announcement();
 
-        return view('homepage');
+        $a->title = $request->input('title');
+        $a->body = $request->input('body');
+
+        $a->save();
+
+
+        return redirect('/')->with('announcement.created.success', 'ok');
     }
 }
