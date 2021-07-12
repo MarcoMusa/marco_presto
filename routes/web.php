@@ -19,4 +19,8 @@ Route::get('/', [PublicController::class, 'home'])->name('homepage');
 
 // ROTTE ANNUNCI
 Route::get('announcement/create', [AnnouncementController::class, 'create'])->name('announcement.create');
+
+// FORM DI CREAZIONE ANNUNCIO
 Route::post('announcement/store', [AnnouncementController::class, 'store'])->name('announcement.store');
+
+Route::get('/category/{name}/{id}/announcement', [PublicController::class, 'announcementsByCategory'])->name('public.announcements.category');
