@@ -10,7 +10,7 @@
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label text-chromeyellow mt-3">Titolo</label>
                   <input type="text" class="form-control rounded-pill @error('title') is-invalid @enderror" id="exampleInputEmail1" aria-describedby="emailHelp" name="title">
-                </div>
+
 
                 {{-- MESSAGGIO ERRORE RICHIESTA --}}
                 @error('title')
@@ -18,9 +18,16 @@
                     <strong>{{$message}}</strong>
                 </span>
                 @enderror
+            </div>
 
                 <div class="mb-3 mt-5">
-                 <textarea name="body" id="" cols="47" rows="10" placeholder="Annuncio"></textarea>
+                 <textarea name="body" class=" @error('title') is-invalid @enderror" id="" cols="47" rows="10" placeholder="Annuncio"></textarea>
+                   {{-- MESSAGGIO ERRORE RICHIESTA --}}
+                @error('body')
+                <span class="invalid-feedback" role="alert" >
+                    <strong>{{$message}}</strong>
+                </span>
+                @enderror
                 </div>
 
                <div class="text-center">
