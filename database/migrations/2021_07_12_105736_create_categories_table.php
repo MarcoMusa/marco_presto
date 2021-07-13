@@ -21,7 +21,7 @@ class CreateCategoriesTable extends Migration
         });
 
         $categories = [
-            'Moto', 'Auto', 'Informatica', 'Giardinaggio', 'Abbigliamento', 'Arredamento', 'Telefonia', 'Benessere', 'libri'
+            'Moto', 'Auto', 'Informatica', 'Giardinaggio', 'Abbigliamento', 'Arredamento', 'Telefonia', 'Benessere', 'Libri', 'Sport', 'Immobili', 'Games'
         ];
 
         foreach ($categories as $category) {

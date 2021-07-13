@@ -1,16 +1,16 @@
 <x-layout>
 
 
-<div class="container">
+<div class="container mg-top">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <h1>Annunci per categoria: {{$category->name}}</h1>
+            <h1 class="text-chromeyellow fs-1 text-shadow fw-bold">Annunci per categoria: <span class="display-6 text-blu text-shadow fw-bolder">{{$category->name}}</span></h1>
         </div>
     </div>
 </div>
 
 @foreach ($announcements as $announcement)
-<div class="row justify-content-center">
+<div class="row justify-content-center mt-5">
     <div class="col-md-8 mb-5">
         <div class="card shadow">
             <div class="card-header bg-blu text-chromeyellow">{{$announcement->title}}</div>
@@ -22,7 +22,7 @@
             </div>
             <div class="card-footer bg-blu text-chromeyellow d-flex justify-content-between">
                 <strong>Category : <a
-                    href="{{route('public.announcements.category', [
+                    href="{{route('announcements.category', [
                         $announcement->category->name,
                         $announcement->category->id
                     ]) }}"

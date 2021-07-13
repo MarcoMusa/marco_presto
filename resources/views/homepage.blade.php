@@ -22,6 +22,38 @@
     </div>
 </header>
 
+{{-- SEZIONE CATEGORIE --}}
+
+<div class="contaner-fluid bg-category pb-5 pt-3 mt-5">
+    <div class="row mb-5 mt-3">
+        <h2 class="text-uppercase text-center text-white text-shadow">Le nostre <span class="fw-bolder">categorie <i class="fas fa-box-open"></i></span></h2>
+    </div>
+
+    <div class="row justify-content-center">
+        @foreach ($categories as $category)
+        <div class="col-12 col-md-3 mb-3 d-flex justify-content-center">
+
+            <div class="card rounded-pill bg-yellow shadow" style="width: 10rem;">
+                <div class="card-body">
+                  <h5 class="card-title fs-6 text-center text-blu">
+
+                    <a href="{{route('announcements.category', [
+
+                        $category->name,
+                        $category->id
+
+                    ]) }}" class="card-link text-decoration-none text-blu fw-bold">{{$category->name}}</a>
+                </h5>
+
+                  </div>
+              </div>
+
+        </div>
+        @endforeach
+    </div>
+</div>
+
+
 
 
 
@@ -44,7 +76,7 @@
                     </div>
                     <div class="card-footer bg-blu text-chromeyellow d-flex justify-content-between">
                         <strong>Category : <a href="
-                            {{route('public.announcements.category', [
+                            {{route('announcements.category', [
                                 $announcement->category->name,
                                 $announcement->category->id
                             ]) }}"

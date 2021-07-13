@@ -10856,6 +10856,14 @@ textarea.form-control-lg {
     margin-top: 100px;
 }
 
+.bg-category {
+    background: linear-gradient(
+        340deg,
+        rgba(253, 253, 253, 1) 14%,
+        rgba(55, 39, 114, 1) 65%
+    );
+}
+
 .p-radius {
     border-radius: 0.8rem;
 }
