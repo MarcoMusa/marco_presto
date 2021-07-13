@@ -23,7 +23,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-chromeyellow fw-bold text-shadow" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-chromeyellow fw-bold text-shadow" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Benvenuto, {{Auth::user()->name}}
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">

@@ -43,13 +43,19 @@
                         </p>
                     </div>
                     <div class="card-footer bg-blu text-chromeyellow d-flex justify-content-between">
-                        <strong>Category : <a href="">{{$announcement->category->name}}</a></strong>
+                        <strong>Category : <a href="
+                            {{route('public.announcements.category', [
+                                $announcement->category->name,
+                                $announcement->category->id
+                            ]) }}"
+                            > {{$announcement->category->name}}</a></strong>
                         <i>{{$announcement->created_at->format('d/m/y')}} - {{$announcement->user->name}}</i>
                     </div>
                 </div>
             </div>
             @endforeach
         </div>
+
 
 
 

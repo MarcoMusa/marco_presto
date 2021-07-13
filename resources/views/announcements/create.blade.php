@@ -8,17 +8,17 @@
                 <h1 class="text-center fs-3 text-uppercase text-chromeyellow fw-bold"><i class="fas fa-plus-square"></i> crea il tuo annuncio</h1>
 
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label text-chromeyellow mt-3">Titolo</label>
-                  <input type="text" class="form-control rounded-pill @error('title') is-invalid @enderror" id="exampleInputEmail1" aria-describedby="emailHelp" name="title">
+                    <label for="exampleInputEmail1" class="form-label text-chromeyellow mt-3">Titolo</label>
+                    <input type="text" class="form-control rounded-pill @error('title') is-invalid @enderror" id="exampleInputEmail1" aria-describedby="emailHelp" name="title">
 
 
-                {{-- MESSAGGIO ERRORE RICHIESTA --}}
-                @error('title')
-                <span class="invalid-feedback" role="alert" >
-                    <strong>{{$message}}</strong>
-                </span>
-                @enderror
-            </div>
+                    {{-- MESSAGGIO ERRORE RICHIESTA --}}
+                    @error('title')
+                    <span class="invalid-feedback" role="alert" >
+                        <strong>{{$message}}</strong>
+                    </span>
+                    @enderror
+                </div>
 
             {{-- SEZIONE CATEGORIE --}}
             <div class="mb-3 mt-5">

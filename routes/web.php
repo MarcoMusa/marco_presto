@@ -23,4 +23,4 @@ Route::get('announcement/create', [AnnouncementController::class, 'create'])->na
 // FORM DI CREAZIONE ANNUNCIO
 Route::post('announcement/store', [AnnouncementController::class, 'store'])->name('announcement.store');
 
-Route::get('/category/{name}/{id}/announcement', [PublicController::class, 'announcementsByCategory'])->name('public.announcements.category');
+Route::get('/category/{name}/{id}/announcements', [PublicController::class, 'announcementsByCategory'])->name('public.announcements.category');
