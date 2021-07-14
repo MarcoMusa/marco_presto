@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Models\Category;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -26,7 +27,11 @@ class AppServiceProvider extends ServiceProvider
     // CONDIVIDERANNO IN TUTTE LE VISTE LE CATEGORIE
     public function boot()
     {
-        $categories = Category::all();
-        View::share('categories', $categories);
+        // SE ESISTE LO SHEMA CATEGORY
+        if (Schema::hasTable('users')) {
+
+            $categories = Category::all();
+            View::share('categories', $categories);
+        }
     }
 }
