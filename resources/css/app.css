@@ -1,2 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap";
+
 @import "style";
+
+/* IMPORT-BANDIERINE MULTILINGUA */
+@import "flag-icon-css/css/flag-icon";

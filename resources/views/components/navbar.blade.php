@@ -2,6 +2,25 @@
     <div class="container-fluid">
       <a class="navbar-brand ms-5 text-chromeyellow fw-bolder text-shadow ms-5" href="#"><i class="fas fa-shopping-bag"></i> PRESTO.it</a>
 
+      {{-- SEZIONE BANDIERINE-MULTILINGUA --}}
+
+          <a href="" class="nav-link">
+              <span class="flag-icon flag-icon-it"></span>
+          </a>
+
+
+
+        <a href="" class="nav-link">
+            <span class="flag-icon flag-icon-gb"></span>
+        </a>
+
+
+
+        <a href="" class="nav-link">
+            <span class="flag-icon flag-icon-es"></span>
+        </a>
+
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
