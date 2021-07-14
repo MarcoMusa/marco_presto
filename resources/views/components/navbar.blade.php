@@ -28,6 +28,23 @@
             </a>
          </form>
 
+         @if (Auth::user()->is_revisor)
+
+            <a href="{{route('revisor.home')}}" class="nav-item px-5">
+
+                <i class="fas fa-laptop-house text-chromeyellow fs-4"></i>
+
+                {{-- <span class="badge badge-pill badge-warning">{{
+
+                \App\Announcement::TopBeRevisionedCount()
+
+                }}</span> --}}
+
+            </a>
+
+         @endif
+
+
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

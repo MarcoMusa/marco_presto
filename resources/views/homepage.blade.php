@@ -5,11 +5,19 @@
         <div class="container h-100">
             <div class="row h-100 align-items-end justify-content-center">
                 <div class="col-12">
+
                     {{-- ALERT ANNUNCIO CREATO CORRETTAMENTE --}}
                     @if (session('announcement.created.success'))
-                    <div class="alert alert-success rounded-pill shadow text-chromeyellow fw-bold">
-                        Annuncio creato correttamente
-                    </div>
+                        <div class="alert alert-success rounded-pill shadow text-chromeyellow fw-bold">
+                            Annuncio creato correttamente
+                        </div>
+                    @endif
+
+                    {{-- ACCESSO SOLO PER REVISORI --}}
+                    @if (session('access.danied.revisor.only'))
+                        <div class="alert alert-danger">
+                            Accesso non contentito - solo per revisori
+                        </div>
                     @endif
                 </div>
                 <div class="col-12 col-md- text-center mb-5">
