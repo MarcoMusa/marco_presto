@@ -98,7 +98,23 @@
     );
 }
 
+.card-text {
+    color: var(--blu);
+}
+
+.card-text:hover {
+    color: white !important;
+}
+
 .p-card {
     background-color: var(--chrome-yellow);
     border: 3px solid white;
+    transition: 0.3s;
+}
+
+.p-card:hover {
+    background-color: var(--chrome-yellow);
+    border: 3px solid white;
+    transform: scale(1.1);
+    color: white;
 }

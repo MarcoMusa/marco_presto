@@ -33,7 +33,7 @@
 
                 <div class="card p-card rounded-pill shadow"  data-aos="flip-left"  style="width: 10rem;">
                     <div class="card-body">
-                    <h5 class="card-title fs-6 text-center fw-bold text-blu">
+                    <h5 class="card-title fs-6 text-center fw-bold card-text">
 
                         <a href="{{route('announcements.category', [
 
