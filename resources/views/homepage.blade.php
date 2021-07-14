@@ -31,9 +31,9 @@
             @foreach ($categories as $category)
             <div class="col-12 col-md-3 mb-3 d-flex justify-content-center">
 
-                <div class="card rounded-pill bg-yellow shadow" style="width: 10rem;">
+                <div class="card p-card rounded-pill shadow"  data-aos="flip-left"  style="width: 10rem;">
                     <div class="card-body">
-                    <h5 class="card-title fs-6 text-center text-blu">
+                    <h5 class="card-title fs-6 text-center fw-bold text-blu">
 
                         <a href="{{route('announcements.category', [
 
@@ -85,5 +85,9 @@
             </div>
         </div>
     </div>
+
+
+
+
 
 </x-layout>

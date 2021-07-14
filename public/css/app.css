@@ -10945,5 +10945,10 @@ textarea.form-control-lg {
     );
 }
 
+.p-card {
+    background-color: var(--chrome-yellow);
+    border: 3px solid white;
+}
+
 
 
