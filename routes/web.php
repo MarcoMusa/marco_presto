@@ -24,3 +24,6 @@ Route::get('announcement/create', [AnnouncementController::class, 'create'])->na
 Route::post('announcement/store', [AnnouncementController::class, 'store'])->name('announcement.store');
 
 Route::get('/category/{name}/{id}/announcements', [PublicController::class, 'announcementsByCategory'])->name('announcements.category');
+
+// ROTTA-MULTILINGUA
+Route::post('locale/{locale}', [PublicController::class, 'locale'])->name('locale');

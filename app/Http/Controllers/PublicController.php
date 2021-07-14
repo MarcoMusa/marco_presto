@@ -8,10 +8,6 @@ use Illuminate\Http\Request;
 
 class PublicController extends Controller
 {
-    // public function home()
-    // {
-    //     return view('homepage');
-    // }
 
     // VISUALIZZAZIONE ULTIMI 5 ARTICOLI INSERITI-> data di creazione in modo discendente
     public function home()
@@ -20,10 +16,18 @@ class PublicController extends Controller
         return view('homepage', compact('announcements'));
     }
 
+    // FUNZIONE CATEGORIE
     public function announcementsByCategory($name, $category_id)
     {
         $category = Category::find($category_id);
         $announcements = $category->announcements()->paginate(5);
         return view('announcements.announcements', compact('category', 'announcements'));
+    }
+
+    // FUNZIONE LOCALE MULTILINGUA
+    public function locale($locale)
+    {
+        session()->put('locale', $locale);
+        return redirect()->back();
     }
 }

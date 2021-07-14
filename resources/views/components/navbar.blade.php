@@ -4,21 +4,29 @@
 
       {{-- SEZIONE BANDIERINE-MULTILINGUA --}}
 
-          <a href="" class="nav-link">
-              <span class="flag-icon flag-icon-it"></span>
-          </a>
+        {{-- ITALIANO --}}
+        <form method="POST" action="{{route('locale' , 'it')}}">
+        @csrf
+            <a href="" class="nav-link">
+                <span class="flag-icon flag-icon-it rounded-circle"></span>
+            </a>
+        </form>
 
+        {{-- INGLESE --}}
+        <form method="POST" action="{{route('locale' , 'en')}}">
+        @csrf
+            <a href="" class="nav-link">
+                <span class="flag-icon flag-icon-gb rounded-circle"></span>
+            </a>
+        </form>
 
-
-        <a href="" class="nav-link">
-            <span class="flag-icon flag-icon-gb"></span>
-        </a>
-
-
-
-        <a href="" class="nav-link">
-            <span class="flag-icon flag-icon-es"></span>
-        </a>
+        {{-- SPAGNOLO --}}
+        <form method="POST" action="{{route('locale' , 'es')}}">
+        @csrf
+            <a href="" class="nav-link">
+                <span class="flag-icon flag-icon-es rounded-circle"></span>
+            </a>
+         </form>
 
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
