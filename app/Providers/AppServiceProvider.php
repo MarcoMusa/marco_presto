@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         // SE ESISTE LO SHEMA CATEGORY
-        if (Schema::hasTable('users')) {
+        if (Schema::hasTable('categories')) {
 
             $categories = Category::all();
             View::share('categories', $categories);
