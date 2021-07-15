@@ -20,10 +20,18 @@ class AnnouncementController extends Controller
         return view('homepage');
     }
 
-    public function create()
+
+
+    public function create(Request $request)
     {
-        return view('announcements.create');
+        $uniqueSecret = $request->old(
+            'uniqueSecret',
+            base_convert(sha1(uniqid(mt_rand())), 16, 36)
+        );
+
+        return view('announcements.create', compact('uniqueSecret'));
     }
+
 
     public function store(AnnouncementRequest $request)
 

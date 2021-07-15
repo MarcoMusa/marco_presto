@@ -4,3 +4,7 @@
 
 /* IMPORT-BANDIERINE MULTILINGUA */
 @import "flag-icon-css/css/flag-icon";
+
+/* IMPORT DROPZONE.JS */
+@import "~dropzone/dist/basic";
+@import "~dropzone/dist/dropzone";
