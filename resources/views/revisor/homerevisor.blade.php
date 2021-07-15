@@ -83,9 +83,22 @@
         </div>
     </div>
 
+
+{{-- NON CI SONO PIU' ANNUNCI DA REVISIONARE --}}
 @else
 
-<h3 class="mg-top text-center text-blu fw-bolder">Non ci sono annunci da revisionare</h3>
+<div class="container-fluid shadow bg-white mg-top">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-uppercase text-blu text-center">dashboard di {{Auth::user()->name}}</h1>
+            <div class="row">
+                <span class="badge bg-blu text-chromeyellow  fs-3 fw-bolder justify-content-center">{{\App\Models\Announcement::ToBeRevisionedCount()}}</span>
+                <h3 class="mg-top text-center text-blu fw-bolder">Non ci sono annunci da revisionare</h3>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 @endif
 
