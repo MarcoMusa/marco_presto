@@ -25,6 +25,7 @@ class PublicController extends Controller
         $category = Category::find($category_id);
         $announcements = $category
             ->announcements()
+            // VEDERE SOLO ANNUNCI ACCETTATI
             ->where('is_accepted', true)
             ->orderBy('created_at', 'desc')
             ->paginate(5);

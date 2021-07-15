@@ -2,10 +2,11 @@
 
 @if($announcement)
 
+{{-- SEZIONE DASHBOARD CON NOME UTENTE DEL REVISORE --}}
 <div class="container-fluid shadow bg-white mg-top">
     <div class="row">
         <div class="col-12">
-            <h1 class="text-uppercase text-blu text-center">dashboard di {{Auth::user()->name}}</h1>
+            <h1 class="text-uppercase text-blu text-center"><i class="fas fa-user-shield fs-5"></i> dashboard di {{Auth::user()->name}}</h1>
             <div class="row">
                 <span class="badge bg-blu text-chromeyellow  fs-3 fw-bolder justify-content-center">{{\App\Models\Announcement::ToBeRevisionedCount()}}</span>
             </div>
@@ -22,6 +23,7 @@
 
                 <div class="card-body">
 
+                    {{-- UTENTE --}}
                     <div class="row">
                         <div class="col-md-2"><h3 class="text-blu fw-bold fs-4">Utente</h3></div>
                         <div class="col-md-10">
@@ -33,6 +35,7 @@
 
                     <hr>
 
+                    {{-- TITOLO --}}
                     <div class="row">
                         <div class="col-md-2"><h3 class="text-blu fw-bold fs-4">Titolo</h3></div>
                         <div class="col-md-10">
@@ -42,6 +45,7 @@
 
                     <hr>
 
+                    {{-- DESCRIZIONE --}}
                     <div class="row">
                         <div class="col-md-2"><h3 class="text-blu fw-bold fs-4">Descrizione</h3></div>
                         <div class="col-md-10">
@@ -90,7 +94,7 @@
 <div class="container-fluid shadow bg-white mg-top">
     <div class="row">
         <div class="col-12">
-            <h1 class="text-uppercase text-blu text-center">dashboard di {{Auth::user()->name}}</h1>
+            <h1 class="text-uppercase text-blu text-center"><i class="fas fa-user-shield fs-3"></i> dashboard di <span class="text-chromeyellow fs-2 fw-bolder text-uppercase">{{Auth::user()->name}}</span> </h1>
             <div class="row">
                 <span class="badge bg-blu text-chromeyellow  fs-3 fw-bolder justify-content-center">{{\App\Models\Announcement::ToBeRevisionedCount()}}</span>
                 <h3 class="mg-top text-center text-blu fw-bolder">Non ci sono annunci da revisionare</h3>
