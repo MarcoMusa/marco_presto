@@ -12,12 +12,12 @@ class RevisorController extends Controller
         $this->middleware('auth.revisor');
     }
 
-    public function index()
+    public function indexRevisor()
     {
         $announcement = Announcement::where('is_accepted', null)
             ->orderBy('created_at', 'desc')
             ->first();
-        return view('revisor.home', compact('announcement'));
+        return view('/revisor/homerevisor', compact('announcement'));
     }
 
     public function setAccepted($announcement_id, $value)
@@ -25,7 +25,7 @@ class RevisorController extends Controller
         $announcement = Announcement::find($announcement_id);
         $announcement->is_accepted = $value;
         $announcement->save();
-        return redirect(route('revisor.home'));
+        return redirect(route('homerevisor'));
     }
 
     public function accept($announcement_id)

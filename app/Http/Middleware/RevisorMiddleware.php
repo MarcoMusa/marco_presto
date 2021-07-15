@@ -9,12 +9,12 @@ use Illuminate\Support\Facades\Auth;
 class RevisorMiddleware
 {
 
-    public function handle(Request $request, Closure $next)
+    public function handle($request, Closure $next)
     {
         if (Auth::user() && Auth::user()->is_revisor) {
             return $next($request);
         }
 
-        return redirect('/')->whit('access.danied.revisor.only', 'access.danied');
+        return redirect('/')->with('access.danied.revisor.only', 'access.danied');
     }
 }

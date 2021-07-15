@@ -28,23 +28,13 @@
             </a>
          </form>
 
-         @if (Auth::user()->is_revisor)
+        {{-- COMPONENTE HOME REVISOR --}}
+        @if (Auth::user() && Auth::user()->is_revisor)
 
-            <a href="{{route('revisor.home')}}" class="nav-item px-5">
+            <a class="nav-link link-nav fw-bold px-1 text-blu bg-yellow rounded-pill px-3 shadow" href="{{route('homerevisor')}}"><i class="fas fa-user-shield fs-5"></i> Home Revisore
+            <span class="badge bg-warning text-danger rounded-circle fs-6 fw-bolder">{{\App\Models\Announcement::ToBeRevisionedCount()}}</span></a>
 
-                <i class="fas fa-laptop-house text-chromeyellow fs-4"></i>
-
-                {{-- <span class="badge badge-pill badge-warning">{{
-
-                \App\Announcement::TopBeRevisionedCount()
-
-                }}</span> --}}
-
-            </a>
-
-         @endif
-
-
+        @endif
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

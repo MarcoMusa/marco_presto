@@ -33,7 +33,7 @@ Route::post('locale/{locale}', [PublicController::class, 'locale'])->name('local
 
 
 // ROTTE REVISORE
-Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor.home');
+Route::get('/homerevisor', [RevisorController::class, 'indexRevisor'])->name('homerevisor');
 // ROTTA POST ACCETTAZIONE ANNUNCIO
 Route::post('/revisor/announcement/{id}/accept', [RevisorController::class, 'accept'])->name('revisor.accept');
 // ROTTA POST RIGETTO ANNUNCIO
