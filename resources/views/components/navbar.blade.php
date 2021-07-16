@@ -44,6 +44,9 @@
                 <li class="nav-item">
                     <a class="nav-link active text-chromeyellow text-shadow" aria-current="page" href="{{route('homepage')}}">Home</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-chromeyellow text-shadow" href="{{route('announcement.index')}}">Annunci</a>
+                </li>
                 @guest
                 <li class="nav-item">
                     <a class="nav-link text-chromeyellow text-shadow" href="{{route('login')}}">Login</a>
@@ -52,9 +55,7 @@
                     <a class="nav-link text-chromeyellow text-shadow" href="{{route('register')}}">Registrati</a>
                 </li>
                 @else
-                <li class="nav-item">
-                    <a class="nav-link text-chromeyellow text-shadow" href="{{route('announcement.index')}}">Annunci</a>
-                </li>
+
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-chromeyellow fw-bold text-shadow" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

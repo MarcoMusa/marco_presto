@@ -12,6 +12,17 @@
                 <div class="col-md-8 mb-5">
                     <div class="card shadow">
                         <div class="card-header bg-blu text-chromeyellow">{{$announcement->title}}</div>
+
+                         {{-- CRUD SOLO SE LOGGATO --}}
+                         @if (Auth::user())
+
+                         <div class="mt-3 text-center">
+                             <button class="btn shadow bg-success"><i class="fas fa-edit text-white fw-bolder"></i></button>
+                             <button class="btn  shadow bg-danger"><i class="fas fa-trash-alt"></i></button>
+                         </div>
+
+                         @endif
+
                         <div class="card-body">
                             <p>
                                 <img src="https://via.placeholder.com/350x150" class="rounded float-right" alt="">

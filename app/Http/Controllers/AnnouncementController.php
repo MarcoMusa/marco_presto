@@ -15,14 +15,6 @@ class AnnouncementController extends Controller
         $this->middleware('auth');
     }
 
-    public function index()
-    {
-        $announcements = Announcement::where('is_accepted', true)->orderBy('created_at', 'desc')->get();
-        return view('announcements/index', compact('announcements'));
-    }
-
-
-
     public function create(Request $request)
     {
         $uniqueSecret = $request->old(

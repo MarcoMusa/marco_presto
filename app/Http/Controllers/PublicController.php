@@ -19,6 +19,12 @@ class PublicController extends Controller
         return view('homepage', compact('announcements'));
     }
 
+    public function index()
+    {
+        $announcements = Announcement::where('is_accepted', true)->orderBy('created_at', 'desc')->get();
+        return view('announcements/index', compact('announcements'));
+    }
+
     // FUNZIONE CATEGORIE
     public function announcementsByCategory($name, $category_id)
     {
