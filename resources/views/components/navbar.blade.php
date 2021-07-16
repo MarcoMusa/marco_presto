@@ -53,7 +53,7 @@
                 </li>
                 @else
                 <li class="nav-item">
-                    <a class="nav-link text-chromeyellow text-shadow" href="#">Annunci</a>
+                    <a class="nav-link text-chromeyellow text-shadow" href="{{route('announcement.index')}}">Annunci</a>
                 </li>
 
                 <li class="nav-item dropdown">

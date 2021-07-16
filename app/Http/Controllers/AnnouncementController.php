@@ -17,7 +17,8 @@ class AnnouncementController extends Controller
 
     public function index()
     {
-        return view('homepage');
+        $announcements = Announcement::where('is_accepted', true)->orderBy('created_at', 'desc')->get();
+        return view('announcements/index', compact('announcements'));
     }
 
 
@@ -31,6 +32,12 @@ class AnnouncementController extends Controller
 
         return view('announcements.create', compact('uniqueSecret'));
     }
+
+    public function show()
+    {
+        return view('announcements/show', compact('announcements'));
+    }
+
 
 
     public function store(AnnouncementRequest $request)

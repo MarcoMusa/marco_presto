@@ -12,6 +12,7 @@ Route::get('/', [PublicController::class, 'home'])->name('homepage');
 
 // ROTTE ANNUNCI
 Route::get('announcement/create', [AnnouncementController::class, 'create'])->name('announcement.create');
+Route::get('/index', [AnnouncementController::class, 'index'])->name('announcement.index');
 
 
 // FORM DI CREAZIONE ANNUNCIO

@@ -36,22 +36,22 @@
             {{-- SEZIONE CATEGORIE --}}
             <div class="mb-3 mt-5">
                 <label for="category" class="text-chromeyellow">Categorie</label>
-                <select name="category" id="category">
-                    @foreach ($categories as $category)
-                    <option value="{{$category->id}}" {{old('category') == $category->id ? 'selected' : ''}}>
-                        {{$category->name}}</option>
-                    @endforeach
-                </select>
+                    <select name="category" id="category">
+                        @foreach ($categories as $category)
+                        <option value="{{$category->id}}" {{old('category') == $category->id ? 'selected' : ''}}>
+                            {{$category->name}}</option>
+                        @endforeach
+                    </select>
             </div>
 
                 <div class="mb-3 mt-5">
                     <textarea name="body" class=" @error('title') is-invalid @enderror" id="" cols="47" rows="10" placeholder="Annuncio"></textarea>
-                {{-- MESSAGGIO ERRORE RICHIESTA --}}
-                @error('body')
-                <span class="invalid-feedback" role="alert" >
-                    <strong>{{$message}}</strong>
-                </span>
-                @enderror
+                    {{-- MESSAGGIO ERRORE RICHIESTA --}}
+                    @error('body')
+                    <span class="invalid-feedback" role="alert" >
+                        <strong>{{$message}}</strong>
+                    </span>
+                    @enderror
                 </div>
 
 

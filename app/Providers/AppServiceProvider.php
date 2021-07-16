@@ -19,12 +19,7 @@ class AppServiceProvider extends ServiceProvider
         //
     }
 
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    // CONDIVIDERANNO IN TUTTE LE VISTE LE CATEGORIE
+
     public function boot()
     {
         // SE ESISTE LO SHEMA CATEGORY
